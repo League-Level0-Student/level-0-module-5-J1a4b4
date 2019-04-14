@@ -11,7 +11,7 @@ int divisor = 2;
 for (int i = 0; i < number - 2; i++) {
 	if (number % divisor == 0) {
 		JOptionPane.showMessageDialog(null, "Your number, " + number + ", is not a prime number.");
-		break;
+		return;
 	}
 	divisor = divisor + 1;
 }
